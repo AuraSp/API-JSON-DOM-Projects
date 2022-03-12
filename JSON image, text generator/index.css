@@ -1,0 +1,138 @@
+
+body {
+  background-image: linear-gradient(to right, #a8caba 0%, #5d4157 100%);
+}
+
+section {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+
+section particles {
+  position: absolute;
+  background: #8787dd;
+  border-radius: 50%;
+  box-shadow: 0 0 1px #000000, 0 0 2px #3b3b5f;
+  animation:animate linear infinite;
+}
+
+section particles:nth-child(even) {
+  border: 1px solid #3b3b5f;
+}
+
+@keyframes animate {
+  100%{
+      transform: translateY(0%);
+      opacity: 0;
+  }
+  95%{
+      opacity: 1;
+  }
+  50%{
+      transform: translateY(2000%);
+      opacity: 1;
+  }
+  5%{
+      opacity: 1;
+  }
+  0%{
+      transform: translateY(4000%);
+      opacity: 0;
+  }
+}
+
+main {
+  position: absolute;
+  height: 40vh;
+  animation:out 0.8s linear;
+}
+
+@keyframes out {
+  0%      {transform: translateY(-200%);}
+  100%     {transform: translateY(0)}
+}
+
+.flex-container {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 15em;
+
+  position: relative;
+  text-align: center;
+  width: 40%;
+}
+
+button {
+  padding: 1em;
+  margin: auto;
+  color: black;
+
+  background-size: 200% auto;
+  font-weight: bold;
+  transition: 0.5s;
+  border-radius: 10px;
+  color: black;
+  background-image: linear-gradient(to right, #003a73ad 0%, #aaaaa4b7  51%, #003a7391  100%);
+  border: none;
+  cursor: grabbing;
+}
+
+button:hover {
+  background-position: right center;
+}
+
+button:before, button:after {
+  position: absolute;
+  opacity: 0;
+  transition: all 0.7s ease;
+  color: black;
+}
+
+button:before {
+  content: "[";
+  left: 50%;
+}
+
+button:after {
+  content: "]";
+  right: 50%;
+}
+
+button:hover:before {
+  left: -1px;
+  opacity: 1;
+}
+
+button:hover:after {
+  right: -1px;
+  opacity: 1;
+}
+
+#message {
+  width: 30%;
+  display: block;
+  position: absolute;
+  word-wrap: break-word;
+  padding: 1em;
+
+  text-align: center;
+  transform: translate(0, 100%);
+  color: rgb(251, 251, 251);
+}
+
+img {
+  max-width: 30em;
+  max-height: 30em;
+  margin-bottom: 2em;
+  border: 0;
+  filter: blur(1px);
+}
+
+

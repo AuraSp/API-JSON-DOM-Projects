@@ -1,0 +1,31 @@
+
+[
+    {
+        "title": "Pirmas tekstas",
+        "src": "./img/1.jpg"
+    },
+    {
+        "title": "Antras tekstas",
+        "src": "./img/2.jpg"
+    },
+    {
+        "title": "Trecias tekstas",
+        "src": "./img/3.jpg"
+    },
+    {
+        "title": "Ketvirtas tekstas",
+        "src": "./img/4.jpg"
+    },
+    {
+        "title": "Penktas tekstas",
+        "src": "./img/5.jpg"
+    },
+    {
+        "title": "Sestas tekstas",
+        "src": "./img/6.jpg"
+    },
+    {
+        "title": "Septintas tekstas",
+        "src": "./img/7.jpg"
+    }
+]

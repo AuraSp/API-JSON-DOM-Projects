@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Guess the number | A.S</title>
+
+    <link rel='stylesheet' href='./style.css'>
+</head>
+
+<body>
+
+    <div id='cursor'></div>
+    <div class='cursorInner'></div>
+
+    <div class='gameTitle'>
+        <h4>GUESS THE NUMBER GAME</h4>
+        <p>Simple <span class='lang'>JavaScript</span> game</p>
+        <br>
+        <h4>Rules:</h4>
+        <p>Use the input to enter your number</p>
+        <p>You can also use input arrows to choose the number</p>
+        <p>Try <strong>NOT</strong> to check what number was generated, unless you really want to</p>
+        <br>
+        <h4>Additional information:</h4>
+        <p>Data can be reset by using `Reset Everything` button, which deletes guessed times and all saved generated
+            numbers</p>
+    </div>
+    <!-- COUNTER -->
+    <span>You have guessed<span id="my-Counter">&nbsp;0&nbsp;</span>time(s)</span>
+
+    <!-- GAME ZONE -->
+    <div class='gameBlock'>
+        <input type='number' name="searchText" placeholder='Enter from 0 to 200 or choose the number..' min=0>
+        <button id='checkingNumber' onclick='check_number()'>CHECK</button>
+    </div>
+
+    <!-- FROM CONSOLE GENERATED NUMBERS TO DOM -->
+    <div class='consoleBlock'>
+        <button class='seeNumber' onclick="change_text()">TO KNOW WHAT NUMBER WAS GENERATED</button>
+        <p id='getNumber'></p>
+        <button id='resetGameFirst'>Reset Everything</button>
+    </div>
+
+    <!-- ANSWER CHECKING ZONE -->
+    <div id='answersBlock'>
+        <p id='getAnswer'></p>
+    </div>
+
+    <footer>
+        <!-- RESET BUTTON -->
+        <button id='resetGameSecond'>Reset Everything</button>
+        <p>&copy; Made by Aura Špejeraitė</p>
+    </footer>
+
+        <!-- SCRIPTS -->
+        <script src='https://code.jquery.com/jquery-3.6.0.slim.min.js'></script><!--JQuery script-->
+        <script src='./main.js' type='text/javascript'></script><!--Main JS script-->
+</body>
+
+</html>
